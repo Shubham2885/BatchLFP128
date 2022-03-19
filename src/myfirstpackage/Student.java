@@ -2,7 +2,7 @@ package myfirstpackage;
 
 public class Student {
 
-	String f_name;
+	static String f_name;
 	String l_name;
 	String address;
 	int roll_no;
@@ -39,6 +39,10 @@ public class Student {
 		System.out.println("College Result is = "+agv);
 	}
 	
+	public static float calcualteAvg(float persentage1, float persentage2) {
+		return (persentage1 + persentage2) / 2;
+	}
+	
 	public static void main(String[] args) {
 		Student student1 = new Student();
 		student1.f_name = "Shubham";
@@ -61,7 +65,7 @@ public class Student {
 		student2.printStudentDetails();
 		float per2 = student2.calculatePersentage(600);
 		
-		float agv = (per1 + per2)/ 2;
+		float agv = calcualteAvg(per1, per2);
 		
 		printCollegeResult(agv);
 	}
