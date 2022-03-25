@@ -2,7 +2,7 @@ package myfirstpackage;
 
 public class Student {
 
-	static String f_name;
+	String f_name;
 	String l_name;
 	String address;
 	int roll_no;
